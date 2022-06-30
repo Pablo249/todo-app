@@ -1,0 +1,16 @@
+<template name="ViewTask">
+        <div class="row">
+            <div class="col-6">
+                <ul>
+                    {{#each allTask}}
+                    <li class="list-group-item {{#if Task}} Task-complete {{else}} list-group-item-secondary{{/if}} js-checkOff">
+                        <div style="width: 100%;">
+                            <span style="width: 90%">{{Task}}</span>
+                            <i class="fa fa-trash js-color  js-delete"></i>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>        
+</template>

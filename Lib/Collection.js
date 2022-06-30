@@ -1,1 +1,1 @@
-Tododb=new mongo.Collection('To do list')
+Tododb=new Mongo.Collection('To do list');

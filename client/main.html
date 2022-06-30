@@ -1,27 +1,16 @@
 <head>
-  <title>todo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+    integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>To Do</title>
 </head>
 
 <body>
-  <h1>To do list!!!!!</h1>
-
-  <template name="cool"
-
-  <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-    <label class="btn btn-outline-primary" for="btncheck1">Finish coding</label><br>
-  
-    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-    <label class="btn btn-outline-primary" for="btncheck2">Get a life</label>(#6/12/2022#)    <br>
-  
-    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-    <label class="btn btn-outline-primary" for="btncheck3">Get some bitches</label><br>
-
-    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-    <label class="btn btn-outline-primary" for="btncheck3">Exercise regularly</label><br>
-
-  </div>
+  <div class="container">
+      {{> nav}}
+       {{> todolist}}
+       {{> AddTask}}
+       {{> ViewTask}}
  
+   </div>
 </body>
-
-
