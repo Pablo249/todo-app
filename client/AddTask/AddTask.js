@@ -16,9 +16,14 @@ Template.AddTask.events({
                 }
                 $("#js-AddTask").val(" ");
             }
-        }
+        },
 
-});
+   
+})
 
+
+
+
+   
 
        

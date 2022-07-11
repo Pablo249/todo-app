@@ -3,10 +3,13 @@
             <div class="col-6">
                 <ul>
                     {{#each allTask}}
-                    <li class="list-group-item {{#if Task}} Task-complete {{else}} list-group-item-secondary{{/if}} js-checkOff">
+
+                    <li class="list-group-item {{#if Task}} Task-complete {{else}} list-group-item-secondary{{/if}} ">
                         <div style="width: 100%;">
+                            <i class="fa fa-check" id="MyCheck" input type="Checkbox" ></i>
                             <span style="width: 90%">{{Task}}</span>
                             <i class="fa fa-trash js-color  js-delete"></i>
+                           
                         </div>
                     </li>
                     {{/each}}

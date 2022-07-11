@@ -20,5 +20,16 @@ Template.ViewTask.events({
     'click .js-delete'(){
         let myId = this._id;
        Tododb.remove({_id: myId});
+    },
+    'click #MyCheck'(){
+        console.log("You click check");
+$("#MyCheck").addClass("check-color");
     }
+  
+  
+
+
+     
+
+   
 });

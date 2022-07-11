@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './main.html';
 import '../Lib/Collection.js';
+import'../Lib/UserAccts.js';
 
 import './Todolist/todolist.html';
 import './Todolist/todolist.js';
@@ -13,6 +14,8 @@ import './AddTask/AddTask.js';
 import './ViewTask/ViewTask.html';
 import './ViewTask/ViewTask.js';
 import  './NavBar/NavBar.html';
+import  './Login/Login.html'
+import  './Login/Login.js'
 // Template.hello.onCreated(function helloOnCreated() {
 //   // counter starts at 0
 //   this.counter = new ReactiveVar(0);
@@ -30,3 +33,4 @@ import  './NavBar/NavBar.html';
 //     instance.counter.set(instance.counter.get() + 1);
 //   },
 // });
+//Private:Boolean
