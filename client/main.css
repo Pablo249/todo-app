@@ -1,4 +1,31 @@
 body {
   padding: 10px;
   font-family: sans-serif;
+  background-color: blueviolet !important;
 }
+.js-checkOff:hover{
+  background-color:antiquewhite ;
+  color: rgb(163, 98, 98);
+}
+.Task-complete{
+  background-color: green !important;
+  color: white !important;
+
+}
+.js-color{
+  color: rgb(89, 155, 155) !important;
+
+}
+
+.check-color{
+  color: blue !important;
+ }
+ 
+ .check-color2{
+  color: rgb(255, 255, 255) !important;
+ }
+ 
+ .curHand{
+cursor:pointer;
+
+ }

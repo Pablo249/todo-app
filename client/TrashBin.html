@@ -1,0 +1,36 @@
+<template name="TrashBin">
+
+<div class="row">
+    <div class="col-xl-12"></div>
+    <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-bs-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <ul>
+            {{#each Trash}}
+
+            <li class="list-group-item {{#if Done1}} Task-complete {{else}} list-group-item-secondary{{/if}} ">
+                <div style="width: 100%;">
+                    <i class="fa fa-check MyCheck {{#if Done1}}check-color{{else}}check-color2{{/if}}" input type="Checkbox" ></i>
+                    <span style="width: 90%">{{Task}} {{#if private}} private {{/if}}</span>
+                    <i class="fa fa-trash js-color  js-delete"></i>
+                    <i class="fa-solid fa-mask js-mask d-add"></i>
+
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+
+        </div>
+
+      </div>
+ </div>
+
+
+</template>

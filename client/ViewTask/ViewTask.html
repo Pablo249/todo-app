@@ -1,19 +1,35 @@
 <template name="ViewTask">
-        <div class="row">
-            <div class="col-6">
-                <ul>
-                    {{#each allTask}}
+    <div class="row mb-2">
+        <div class="col-5 offset-2">
+                Task
+        </div>
+        <div class="col-5">
+                 Due Date <i class="fa-solid fa-arrow-{{#if sortOrder}}down-1-9{{else}}up-9-1 {{/if}}curHand js-sortDate "></i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-9">
+                    
+                
+                    
+                    <ul>
+                        {{#each allTask}}
 
-                    <li class="list-group-item {{#if Task}} Task-complete {{else}} list-group-item-secondary{{/if}} ">
-                        <div style="width: 100%;">
-                            <i class="fa fa-check" id="MyCheck" input type="Checkbox" ></i>
-                            <span style="width: 90%">{{Task}}</span>
-                            <i class="fa fa-trash js-color  js-delete"></i>
-                           
-                        </div>
-                    </li>
-                    {{/each}}
-                </ul>
-            </div>
-        </div>        
+                        <li class="list-group-item {{#if Done1}} Task-complete {{else}} list-group-item-secondary{{/if}} ">
+                            <div style="width: 100%;">
+                                <i class="fa-solid fa-circle-check MyCheck " input type="Checkbox" ></i>
+                                <span style="width: 90%">{{Task}} {{#if private}} private {{/if}}</span>
+                                <i class="fa fa-trash js-color  js-delete"></i>
+                                <i class="{{#if private}}fa-solid fa-mask{{/if}}"></i>
+                       
+                                <div class="col-2">
+                                    
+                                 <span class="">{{dueDate}}</span>
+                                </div>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+        </div>  
+    </div>        
 </template>

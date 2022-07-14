@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
+import {Session} from 'meteor/session'
 import bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,8 +15,10 @@ import './AddTask/AddTask.js';
 import './ViewTask/ViewTask.html';
 import './ViewTask/ViewTask.js';
 import  './NavBar/NavBar.html';
-import  './Login/Login.html'
-import  './Login/Login.js'
+import  './Login/Login.html';
+import  './Login/Login.js';
+import './TrashBin.html';
+import './TrashBin.js';
 // Template.hello.onCreated(function helloOnCreated() {
 //   // counter starts at 0
 //   this.counter = new ReactiveVar(0);
@@ -34,3 +37,4 @@ import  './Login/Login.js'
 //   },
 // });
 //Private:Boolean
+//TrashBin
